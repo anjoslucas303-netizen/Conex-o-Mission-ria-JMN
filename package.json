@@ -8,7 +8,7 @@
   "scripts": {
     "start": "electron .",
     "test": "node test/store.test.js",
-    "dist": "electron-builder --win nsis --x64"
+    "dist": "electron-builder --win nsis --x64 --publish never"
   },
   "dependencies": {
     "leaflet": "^1.9.4",
