@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https: jmn-tiles:; font-src 'self'">
+  <title>JMN — Adoção Missionária</title>
+  <link rel="stylesheet" href="../node_modules/leaflet/dist/leaflet.css">
+  <link rel="stylesheet" href="../node_modules/leaflet.markercluster/dist/MarkerCluster.css">
+  <link rel="stylesheet" href="../node_modules/leaflet.markercluster/dist/MarkerCluster.Default.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🌍 Adoção Missionária <small>JMN</small></h1>
+    <nav id="tabs">
+      <button data-act="view" data-v="map">Mapa</button>
+      <button data-act="view" data-v="list">Lista</button>
+      <button data-act="view" data-v="favs">Favoritos</button>
+      <button data-act="view" data-v="admin">Administrador</button>
+    </nav>
+    <input id="search" type="search" placeholder="Buscar missionário pelo nome…">
+  </header>
+  <div id="filters"></div>
+  <div id="net" class="hidden">Sem internet: o mapa-base pode não aparecer, mas marcadores, perfis e dados funcionam normalmente.</div>
+  <main>
+    <section id="v-map"><div id="map"></div><aside id="sheet" class="hidden"></aside></section>
+    <section id="v-other" class="hidden"></section>
+  </main>
+  <div id="modal" class="hidden"></div>
+  <div id="toast" class="hidden"></div>
+  <script src="../node_modules/leaflet/dist/leaflet.js"></script>
+  <script src="../node_modules/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

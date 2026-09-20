@@ -1,0 +1,36 @@
+{
+  "name": "jmn-offline",
+  "productName": "JMN Adoção Missionária",
+  "version": "1.0.0",
+  "description": "Plataforma de Conexão e Adoção Missionária — JMN (versão para computador, funciona sem internet)",
+  "author": "JMN",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "node test/store.test.js",
+    "dist": "electron-builder --win nsis --x64"
+  },
+  "dependencies": {
+    "leaflet": "^1.9.4",
+    "leaflet.markercluster": "^1.5.3"
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "br.org.jmn.adocao.offline",
+    "productName": "JMN Adoção Missionária",
+    "directories": { "output": "dist", "buildResources": "build" },
+    "files": ["main.js", "preload.js", "lib/**", "renderer/**", "package.json"],
+    "win": { "target": [{ "target": "nsis", "arch": ["x64"] }], "icon": "build/icon.ico" },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "JMN Adoção Missionária",
+      "artifactName": "JMN-Adocao-Offline-Setup-${version}.exe"
+    }
+  }
+}
