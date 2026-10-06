@@ -15,51 +15,45 @@ Systems Analysis and Development.
 
 - Missionary profile management
 - Missionary project management
-- Geographic coordinates and map visualization
+- Geographic information and coordinates
 - Offline map resources
-- Favorites
 - Administrative access control
+- Favorites
 - Event tracking
 - Audit records
 - JSON data backup and restoration
-- Import and export of application data
+- Data import and export
 - Image and gallery management
-- Windows desktop distribution
 
 ## Technologies
 
 - JavaScript
 - Electron
-- Electron Builder
+- Node.js
 - Leaflet
 - Leaflet MarkerCluster
-- Node.js
 - HTML
 - CSS
 
 ## Technical Highlights
 
-The application uses Electron's main and renderer processes with a
-preload layer and isolated browser context.
+The application uses Electron's main process, renderer process and
+preload layer to separate application responsibilities.
 
-Administrative operations are protected by authentication, with passwords
-stored using a cryptographic hash and salt.
+It uses IPC communication between the application processes and
+local JSON storage for application data.
 
-The application also implements validation for URLs, geographic
-coordinates and image data.
+The project also includes administrative authentication,
+data validation, backup and restoration features, and support
+for offline map resources.
 
 ## My Role
 
-This is a personal project developed as part of my practical learning
-in Systems Analysis and Development.
+This is a personal project developed as part of my practical
+learning while studying Systems Analysis and Development.
 
-My work includes application development, project organization,
-feature implementation, testing, debugging and configuration for
-Windows distribution.
-
-## Project
-
-https://conexaomissionaria.base44.app
+I worked on the application structure, implementation of features,
+data management, testing, debugging and Windows desktop configuration.
 
 ## Status
 
@@ -68,6 +62,9 @@ Personal project under continuous development and improvement.
 ## Author
 
 Lucas dos Anjos
+
+Systems Analysis and Development Student seeking my first
+professional opportunity in Information Technology.
 
 Systems Analysis and Development Student seeking my first professional
 opportunity in Information Technology.
