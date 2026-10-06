@@ -1,77 +1,123 @@
 # JMN — Adoção Missionária
 
-Desktop application developed as a personal technology project to organize missionary information and support missionary-related activities.
+Aplicativo desktop desenvolvido como projeto pessoal de tecnologia para organizar informações de missionários, projetos e dados geográficos.
 
-## About the Project
+O projeto foi desenvolvido como parte do meu aprendizado prático durante o curso de Análise e Desenvolvimento de Sistemas.
 
-JMN — Adoção Missionária is a Windows desktop application designed to organize missionary profiles, projects and geographic information.
+## Sobre o Projeto
 
-The project was developed as part of my practical learning while studying Systems Analysis and Development.
+O JMN — Adoção Missionária é um aplicativo desktop para Windows desenvolvido com o objetivo de centralizar e organizar informações relacionadas a missionários e projetos.
 
-## Main Features
+A aplicação reúne gerenciamento de dados, visualização geográfica e recursos administrativos em uma interface desktop com suporte a funcionamento offline.
 
-- Missionary profile management
-- Missionary project management
-- Geographic information and coordinates
-- Interactive map
-- Offline map resources
-- Administrative access control
-- Favorites
-- Event tracking
-- Data backup and restoration
-- Data import and export
-- Image and gallery management
+## Principais Funcionalidades
 
-## Technologies
+- Cadastro e gerenciamento de missionários
+- Cadastro e gerenciamento de projetos missionários
+- Informações geográficas e coordenadas
+- Mapa interativo
+- Recursos de mapas offline
+- Controle de acesso administrativo
+- Sistema de favoritos
+- Registro de eventos
+- Registros de auditoria
+- Backup e restauração de dados
+- Importação e exportação de dados em JSON
+- Gerenciamento de imagens e galerias
+- Validação de dados
+
+## Tecnologias Utilizadas
 
 - JavaScript
 - Electron
 - Node.js
-- Leaflet
-- Leaflet MarkerCluster
 - HTML
 - CSS
+- Leaflet
+- Leaflet MarkerCluster
 
-## Technical Highlights
+## Arquitetura Técnica
 
-The application uses Electron's main process, renderer process and preload layer to separate application responsibilities.
+A aplicação utiliza a arquitetura do Electron, separando as responsabilidades entre os processos principal, renderer e a camada preload.
 
-It uses IPC communication between the application processes and local data storage for application information.
+A comunicação entre os processos da aplicação é realizada por meio de IPC.
 
-The project also includes administrative authentication, data validation, backup and restoration features, and support for offline map resources.
+A camada preload disponibiliza uma API controlada para o renderer utilizando o `contextBridge` do Electron.
 
-## My Role
+Os dados da aplicação são armazenados localmente e gerenciados pela camada de dados do sistema.
 
-This is a personal project developed as part of my practical learning while studying Systems Analysis and Development.
+O projeto também possui suporte a recursos de mapas offline, permitindo o acesso às informações geográficas sem depender totalmente de um serviço de mapas online.
 
-I worked on the application structure, implementation of features, data management, testing, debugging and Windows desktop configuration.
+## Autenticação e Gerenciamento de Dados
 
-## Project Status
+A área administrativa possui recursos como:
 
-Personal project under continuous development and improvement.
+- Autenticação por senha
+- Proteção contra tentativas de acesso malsucedidas
+- Controle de tempo de sessão administrativa
+- Validação de dados
+- Registros de auditoria
+- Backup e restauração
+- Importação e exportação de dados em JSON
 
-## Screenshots
+Esses recursos fazem parte da arquitetura local da aplicação e foram implementados como parte das práticas de desenvolvimento e organização do projeto.
 
-### Map and Missionary Profile
+## Minha Participação
 
-Interactive map interface with search, filters and missionary profile information.
+Este é um projeto pessoal desenvolvido como parte do meu aprendizado prático durante o curso de Análise e Desenvolvimento de Sistemas.
 
-![Map and missionary profile](map-interface.png)
+Participei do desenvolvimento de:
 
-### Administrative Panel
+- Estrutura da aplicação
+- Implementação das funcionalidades
+- Gerenciamento de dados
+- Interface do usuário
+- Funcionalidades administrativas
+- Integração do mapa
+- Testes
+- Correção de erros e depuração
+- Configuração da aplicação para Windows
 
-Administrative interface for managing missionary records.
+## Dados de Demonstração
 
-![Administrative panel](admin-panel.png)
+A aplicação utiliza dados fictícios para fins de demonstração, testes e apresentação.
 
-### Geographic Overview
+Nenhum dado pessoal real de missionários é destinado a ser exposto neste repositório.
 
-Geographic visualization of missionary locations and project areas.
+## Status do Projeto
 
-![Geographic overview](map-overview.png)
+Projeto pessoal em desenvolvimento contínuo, com melhorias e novas funcionalidades sendo implementadas.
 
-## Author
+## Capturas de Tela
 
-Lucas dos Anjos
+### Mapa e Perfil do Missionário
 
-Systems Analysis and Development Student seeking my first professional opportunity in Information Technology.
+Interface do mapa interativo com pesquisa, filtros e informações do perfil do missionário.
+
+![Mapa e perfil do missionário](map-interface.png)
+
+### Painel Administrativo
+
+Interface administrativa para gerenciamento dos registros de missionários.
+
+![Painel administrativo](admin-panel.png)
+
+### Visão Geográfica
+
+Visualização geográfica dos locais de atuação dos missionários e áreas dos projetos.
+
+![Visão geográfica](map-overview.png)
+
+## Autor
+
+**Lucas dos Anjos**
+
+Estudante de Análise e Desenvolvimento de Sistemas em busca da primeira oportunidade profissional na área de Tecnologia da Informação.
+
+Tenho interesse em:
+
+- Suporte de TI
+- Suporte Técnico
+- Atendimento ao Cliente
+- Sistemas e Tecnologia
+- Oportunidades de nível Júnior
