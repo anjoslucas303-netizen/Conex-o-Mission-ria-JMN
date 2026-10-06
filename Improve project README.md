@@ -1,34 +1,47 @@
-# Conexão Missionária JMN
-
-Projeto próprio de uma aplicação voltada à organização e conexão de informações missionárias.
+# JMN Adoção Missionária
 
 ## Sobre o projeto
 
-Este projeto foi desenvolvido como parte da minha prática em desenvolvimento de aplicações durante minha formação em Análise e Desenvolvimento de Sistemas.
+Projeto próprio de uma aplicação desktop voltada à conexão, organização e apoio às atividades relacionadas à adoção missionária.
 
-A aplicação busca organizar informações e disponibilizar recursos digitais para apoiar atividades relacionadas ao contexto missionário.
+A aplicação foi desenvolvida como um projeto prático durante minha formação em Análise e Desenvolvimento de Sistemas, com foco na criação de uma solução funcional para computadores Windows.
 
 ## Objetivo
 
-Criar uma solução digital funcional para organização de informações e apoio à gestão de atividades missionárias.
+Criar uma aplicação para organizar informações relacionadas ao contexto missionário e disponibilizar recursos que facilitem sua consulta e utilização.
 
 ## Meu papel
 
-- Desenvolvimento e configuração da aplicação
+- Desenvolvimento da aplicação
 - Organização da estrutura do projeto
 - Implementação e ajustes de funcionalidades
+- Integração de recursos de mapas
 - Testes e correções
-- Organização das informações utilizadas pela aplicação
+- Configuração da aplicação para execução em ambiente Windows
+- Geração do instalador da aplicação
 
-## Tecnologias
+## Tecnologias utilizadas
 
 - JavaScript
+- Electron
+- Electron Builder
+- Leaflet
+- Leaflet MarkerCluster
 - HTML
 - CSS
+- Node.js
 
-## Projeto online
+## Aplicação
 
-https://conexaomissionaria.base44.app
+A aplicação foi estruturada como um aplicativo desktop utilizando Electron, com suporte à geração de instalador para Windows x64.
+
+## Mapas
+
+O projeto utiliza Leaflet para recursos de mapas e Leaflet MarkerCluster para organização visual de marcadores.
+
+## Execução
+
+O projeto possui configuração para desenvolvimento, testes e geração de uma versão instalável para Windows.
 
 ## Status
 
