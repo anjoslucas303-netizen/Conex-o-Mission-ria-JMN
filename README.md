@@ -68,3 +68,23 @@ professional opportunity in Information Technology.
 
 Systems Analysis and Development Student seeking my first professional
 opportunity in Information Technology.
+
+## Screenshots
+
+### Map and Missionary Profile
+
+Interactive map interface with search, filters and missionary profile information.
+
+![Map and missionary profile](map-interface.png)
+
+### Administrative Panel
+
+Administrative interface for managing missionary records.
+
+![Administrative panel](admin-panel.png)
+
+### Geographic Overview
+
+Geographic visualization of missionary locations and project areas.
+
+![Geographic overview](map-overview.png)
